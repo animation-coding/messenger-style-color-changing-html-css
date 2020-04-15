@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+#style-1::-webkit-scrollbar {
+    width: 8px;
+    background-color: none;
+}
+#style-1::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #777;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  background: #333;
+  height: 100%;
+}
+
+body {
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: flex;
+  height: 96%;
+}
+
+code {
+  color: rgba(255, 255, 255, 0.75);
+  display: inline;
+}
+
+.Phone {
+  background: #111;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+              0 15px 12px rgba(0, 0, 0, 0.22);
+  height: 100%;
+  max-height: 720px;
+  max-width: 410px;
+  overflow: hidden scroll;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.List {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+
+.Item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+.Item + .Item {
+  margin-top: 8px;
+}
+
+.Avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+          flex-grow: 0;
+  height: 32px;
+  width: 32px;
+}
+
+.Avatar-image {
+  display: block;
+  width: 100%;
+}
+
+.Messages {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.Message {
+  color: white;
+  letter-spacing: 0.5px;
+  line-height: 1.25;
+  font-weight: 300;
+  margin: 1px;
+}
+
+.Message-inner {
+  background: #333;
+  display: inline-block;
+  max-width: 260px;
+  padding: 8px 16px;
+}
+
+.Item--left .Messages {
+  margin-left: 16px;
+}
+.Item--left .Message-inner {
+  border-radius: 0 16px 16px 0;
+}
+.Item--left .Message:first-child .Message-inner {
+  border-top-left-radius: 16px;
+}
+.Item--left .Message:last-child .Message-inner {
+  border-bottom-left-radius: 16px;
+}
+
+.Item--right {
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+}
+.Item--right .Messages {
+  -webkit-box-align: end;
+          align-items: flex-end;
+}
+.Item--right .Message-inner {
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+  border-radius: 16px 0 0 16px;
+ 
+    background-color: rgb(240, 29, 106);
+    background-image: linear-gradient(rgb(0, 95, 255) 0%, rgb(146, 0, 255) 50%, rgb(255, 46, 25) 100%);
+
+/*
+
+    background-color: rgb(26, 219, 91);
+    background-image: linear-gradient(rgb(255, 210, 0) 0%, rgb(110, 223, 0) 50%, rgb(0, 223, 187) 100%);
+
+ 
+ /*   background-color: rgb(255, 156, 25);
+    background-image: linear-gradient(rgb(255, 220, 45) 0%, rgb(255, 150, 22) 50%, rgb(255, 79, 0) 100%);
+*/
+
+
+}
+.Item--right .Message:first-child .Message-inner {
+  border-top-right-radius: 16px;
+}
+.Item--right .Message:last-child .Message-inner {
+  border-bottom-right-radius: 16px;
+}
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+    <div class="Phone" id="style-1">
+        <ul class="List">
+
+          <li class="Item Item--left">
+            <div class="Avatar">
+              <img src="AC-LOGO.png" class="Avatar-image"/>
+            </div>
+            <div class="Messages">
+              <div class="Message">
+                <div class="Message-inner">
+                 Hey there!
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="Item Item--right">
+            <div class="Messages">
+              <div class="Message">
+                <div class="Message-inner">
+                  Hi 👋, guess you're wondering about the the Instagram style color changing messages?
+                </div>
+              </div>
+              <div class="Message">
+                <div class="Message-inner">
+                  colour*
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="Item Item--left">
+            <div class="Avatar">
+              <img src="AC-LOGO.png" class="Avatar-image" />
+            </div>
+            <div class="Messages">
+              <div class="Message">
+                <div class="Message-inner">
+                  You read my mind
+                </div>
+              </div>
+              <div class="Message">
+                <div class="Message-inner">
+                  How is it done?
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="Item Item--right">
+            <div class="Messages">
+              <div class="Message">
+                <div class="Message-inner">
+                  Pretty simple really, using <code>linear-gradient</code> and <code>background-attachment: fixed;</code>
+                </div>
+              </div>
+              <div class="Message">
+                <div class="Message-inner">
+                  It creates a great effect.
+                </div>
+              </div>
+              <div class="Message">
+                <div class="Message-inner">
+                  👌 
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="Item Item--left">
+            <div class="Avatar">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" class="Avatar-image" />
+            </div>
+            <div class="Messages">
+              <div class="Message">
+                <div class="Message-inner">
+                  Great thank you!
+                </div>
+              </div>
+              <div class="Message">
+                <div class="Message-inner">
+                  🙏 
+                </div>
+              </div>
+            </div>
+          </li>
+           <li class="Item Item--right">
+            <div class="Messages">
+              <div class="Message">
+                <div class="Message-inner">
+                  Scroll and see me change colour
+                </div>
+              </div>
+              <div class="Message">
+                <div class="Message-inner">
+                  Lorem ipsum dolor
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="Item Item--left">
+            <div class="Avatar">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" class="Avatar-image" />
+            </div>
+            <div class="Messages">
+              <div class="Message">
+                <div class="Message-inner">
+                  Lorem ipsum dolor
+                </div>
+              </div>
+              <div class="Message">
+                <div class="Message-inner">
+                  Assumenda consequuntur repellat. 
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="Item Item--right">
+            <div class="Messages">
+              <div class="Message">
+                <div class="Message-inner">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+              </div>
+              <div class="Message">
+                <div class="Message-inner">
+                  Lorem ipsum dolor
+                </div>
+              </div>
+              <div class="Message">
+                <div class="Message-inner">
+                  Aspernatur molestias aliquid, quos error consequuntur veniam. Autem dolorum explicabo eum fugiat magni quo dolores distinctio, similique adipisci porro fuga reiciendis nulla. 
+                </div>
+              </div>
+            </div>
+          </li>
+
+          
+          <li class="Item Item--left">
+            <div class="Avatar">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" class="Avatar-image" />
+            </div>
+            <div class="Messages">
+              <div class="Message">
+                <div class="Message-inner">
+                  Lorem ipsum dolor
+                </div>
+              </div>
+              <div class="Message">
+                <div class="Message-inner">
+                  Exercitationem corrupti, dignissimos ab dolore laborum unde minus quo velit quisquam dolor earum quia provident harum illo amet praesentium quibusdam voluptatibus deserunt. 
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="Item Item--left">
+            <div class="Avatar">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" class="Avatar-image" />
+            </div>
+            <div class="Messages">
+              <div class="Message">
+                <div class="Message-inner">
+                  Maiores alias ipsam veniam repellendus voluptatem unde nam rem tenetur magni quis. Illo veniam itaque molestiae alias, fuga voluptatum autem quis nulla!
+                </div>
+              </div>
+            </div>
+          </li>
+           <li class="Item Item--right">
+            <div class="Messages">
+              <div class="Message">
+                <div class="Message-inner">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+              </div>
+              <div class="Message">
+                <div class="Message-inner">
+                  Dolor, blanditiis! Laudantium, laborum! Laboriosam nam alias quis cupiditate labore nisi aperiam, necessitatibus voluptas illum iure, maxime dolorem voluptatibus quaerat obcaecati natus?
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="Item Item--left">
+            <div class="Avatar">
+              <img src="AC-LOGO.png" class="Avatar-image" />
+            </div>
+            <div class="Messages">
+              <div class="Message">
+                <div class="Message-inner">
+                  Eaque tempora at totam! Id corporis blanditiis dicta neque non ex quasi provident exercitationem quidem voluptas itaque illum saepe, temporibus veritatis corrupti.
+                </div>
+              </div>
+              <div class="Message">
+                <div class="Message-inner">
+                  Fugit officiis aut inventore voluptatem commodi repudiandae nobis voluptas reiciendis, facere, voluptatibus quos ipsam quaerat cumque odio animi corporis, labore dolore corrupti! 
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="Item Item--right">
+            <div class="Messages">
+              <div class="Message">
+                <div class="Message-inner">
+                  That's all folks!
+                </div>
+              </div>
+              <div class="Message">
+                <div class="Message-inner">
+                  🐷
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+        </ul>
+      </div>
+</body>
+</html>

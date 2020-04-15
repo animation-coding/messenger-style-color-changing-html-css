@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+
+#srcoll-1::-webkit-scrollbar
+{
+    width: 8px;
+    background-color: none;
+}
+#srcoll-1::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+    background-color: #777;
+}
+*,*::after,*::before
+{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html
+{
+    background: #333;
+    height: 100%;
+}
+
+body
+{
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: flex;
+    height: 96%;
+}
+
+.phone
+{
+    background: #111;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.3),
+    0 15px 12px rgba(0,0,0,0.22);
+    height: 100%;
+    max-height: 720px;
+    max-width: 410px;
+    overflow: hidden scroll;
+    width: 100%;
+    border-radius: 12px;
+}
+.list
+{
+    list-style:none;
+    margin: 0;
+    padding: 20px;
+}
+.item
+{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: end;
+    align-items: flex-end;
+}
+.item + .item
+{
+    margin-top: 8px;
+}
+
+.avatar
+{
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    height: 32px;
+    width: 32px;
+}
+.avatar-img
+{
+    display: block;
+    width: 100%;
+}
+.messages
+{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+.message
+{
+    color:#fff;
+    letter-spacing: 0.5px;
+    line-height: 1.25;
+    font-weight: 300;
+    margin: 1px;
+}
+
+.message-inner
+{
+    background: #333;
+    display: inline-block;
+    max-width: 260px;
+    padding: 8px 16px;
+}
+
+.item-left .message
+{
+    margin-left: 16px;
+}
+.item-left .message-inner
+{
+    border-radius: 0 16px 16px 0;
+}
+.item-left .message:first-child .message-inner
+{
+    border-top-left-radius: 16px;
+}
+.item-left .message:last-child .message-inner
+{
+    border-bottom-left-radius: 16px;
+}
+.item-right
+{
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+code
+{
+    color: rgba(255,255,255,0.75);
+}
+
+.item-right .messages
+{
+    -webkit-box-align: end;
+    align-items: flex-end;
+}
+.item-right .message-inner
+{
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    border-radius: 16px 0 0 16px;
+    background-color: rgb(240,29,106);
+ /*   background-image: linear-gradient(
+        rgb(0, 95, 255) 0%,
+        rgb(146, 0, 255) 50%,
+        rgb(255,46,25) 100%);
+
+
+
+    background-color: rgb(26, 219, 91);
+    background-image: linear-gradient(rgb(255, 210, 0) 0%, rgb(110, 223, 0) 50%, rgb(0, 223, 187) 100%);
+
+ 
+ */   background-color: rgb(255, 156, 25);
+    background-image: linear-gradient(rgb(255, 220, 45) 0%, rgb(255, 150, 22) 50%, rgb(255, 79, 0) 100%);
+
+
+
+  
+
+}
+.item-right .message:first-child .message-inner
+{
+    border-top-right-radius: 16px;
+}
+
+.item-right .message:last-child .message-inner
+{
+    border-bottom-right-radius: 16px;
+}
+
+
+
+
+
+
+
+
+

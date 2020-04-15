@@ -1,0 +1,67 @@
+Hey there!
+
+Hi 👋, guess you're wondering about the the Instagram style color changing messages?
+                
+color*
+
+You read my mind
+
+How is it done?
+
+
+
+Pretty simple really, using <code>linear-gradient</code> and <code>background-attachment: fixed;</code>
+
+It creates a great effect.
+
+👌 
+
+Great thank you!
+
+🙏
+
+Scroll and see me change colour
+
+Lorem ipsum color
+
+
+Lorem ipsum color
+
+
+Assumenda consequuntur repellat. 
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+Lorem ipsum color
+
+Aspernatur molestias aliquid, quos error consequuntur veniam. Autem dolorum explicabo eum fugiat magni quo dolores distinctio, similique adipisci porro fuga reiciendis nulla. 
+
+
+Lorem ipsum color                
+
+
+Exercitationem corrupti, dignissimos ab dolore laborum unde minus quo velit quisquam dolor earum quia provident harum illo amet praesentium quibusdam voluptatibus deserunt. 
+                
+Maiores alias ipsam veniam repellendus voluptatem unde nam rem tenetur magni quis. Illo veniam itaque molestiae alias, fuga voluptatum autem quis nulla!
+               
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                
+Dolor, blanditiis! Laudantium, laborum! Laboriosam nam alias quis cupiditate labore nisi aperiam, necessitatibus voluptas illum iure, maxime dolorem voluptatibus quaerat obcaecati natus?
+               
+Eaque tempora at totam! Id corporis blanditiis dicta neque non ex quasi provident exercitationem quidem voluptas itaque illum saepe, temporibus veritatis corrupti.
+
+Fugit officiis aut inventore voluptatem commodi repudiandae nobis voluptas reiciendis, facere, voluptatibus quos ipsam quaerat cumque odio animi corporis, labore dolore corrupti! 
+
+That's all folks!
+
+
+🐷
+
+
+
+
+
+
+
+
